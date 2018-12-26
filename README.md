@@ -31,4 +31,4 @@ sudo ./retropie_setup.sh
 Thanks
 ------
 
-This fork of the original script simply tells the installer that you're running on an ODROID-C2 board which has a similar ARM Cortex-A53
+This fork of the original script simply tells the installer that you're running on an ODROID-C2 board which has a similar ARM Cortex-A53 architecture.
