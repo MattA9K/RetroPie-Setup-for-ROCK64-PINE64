@@ -220,6 +220,7 @@ function get_rpi_video() {
 
 function get_platform() {
     local architecture="$(uname --machine)"
+    __platform="odroid-c2"
     if [[ -z "$__platform" ]]; then
         case "$(sed -n '/^Hardware/s/^.*: \(.*\)/\1/p' < /proc/cpuinfo)" in
             BCM*)
