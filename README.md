@@ -7,21 +7,25 @@ Tested On Ubuntu
 This fork of RetroPie-Setup has been tweaked to bypass the unknown architecture error for this device:
 https://roc-rk3328-cc.readthedocs.io/en/latest/intro.html#specification
 
-This build was tested and run on Ubuntu 16.04 
-```shell
-sudo apt-get update
-sudo apt-get dist-upgrade
-sudo apt-get install git
-```
 
-Then you can download the latest RetroPie setup script with
+Start just like you do with the official git repo:
 
 ```shell
 cd
 git clone --depth=1 https://github.com/MattAndrzejczuk/RetroPie-Setup-for-ROCK64-PINE64.git
 ```
 
-The script is executed with 
+Haven't figured this out yet whether you need to do this before or after installation, but these packages are required in order to get emulationstation working:
+
+```shell
+sudo apt-get install libsdl2-dev
+sudo apt-get install libudev-dev
+sudo apt-get install libibus-1.0-dev
+sudo apt-get install fcitx-libs-dev
+```
+
+
+Give it a shot, run the installer:
 
 ```shell
 cd RetroPie-Setup-for-ROCK64-PINE64
